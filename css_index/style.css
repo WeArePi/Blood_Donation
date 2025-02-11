@@ -1,0 +1,146 @@
+ /* Reset Styles */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ /* Body Styling */
+ body {
+     font-family: Arial, sans-serif;
+     background-color: #f2f2f2;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+ }
+
+ /* Navbar */
+ .custom-navbar {
+     background-color: #d9534f !important;
+     width: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     padding: 10px 20px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     z-index: 1000;
+ }
+
+ .navbar-links {
+     display: flex;
+     gap: 20px;
+ }
+
+ .navbar-links a {
+     color: white !important;
+     text-decoration: none;
+     font-size: 18px;
+     padding: 10px;
+     transition: color 0.3s ease;
+ }
+
+ .navbar-links a:hover {
+     color: #ffeb3b;
+ }
+
+ /* Logo */
+ .logo {
+     height: 60px;
+     margin-right: 20px;
+ }
+
+ /* Container */
+ .container {
+     text-align: center;
+     margin-top: 80px;
+     width: 100%;
+ }
+
+ /* Search Form */
+ .search-form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+ }
+
+ .search-box {
+     width: 80%;
+     max-width: 500px;
+     height: 50px;
+     padding: 0 10px;
+     font-size: 16px;
+     border: 1px solid #dcdcdc;
+     border-radius: 24px;
+     margin: 10px 0;
+ }
+
+ /* Donor Text */
+ .donor-text {
+     font-size: 18px;
+     color: #00bcd4;
+     text-align: center;
+     margin-top: 10px;
+     cursor: pointer;
+     transition: color 0.3s ease;
+ }
+
+ .donor-text:hover {
+     color: #ff4081;
+ }
+
+ .donor-text:active {
+     color: #8bc34a;
+ }
+
+ /* Dark Mode */
+ .dark-mode {
+     background-color: black;
+     color: white;
+ }
+
+ /* Dark Mode Toggle Button */
+ .dark-mode-toggle {
+     background: none;
+     border: none;
+     color: white;
+     font-size: 20px;
+     cursor: pointer;
+ }
+
+ /* Media Queries for Responsiveness */
+ @media (max-width: 768px) {
+     .navbar-links {
+         display: none;
+     }
+
+     .logo {
+         height: 40px;
+     }
+
+     .container {
+         margin-top: 100px; /* Adjust for mobile screen */
+     }
+
+     .search-box {
+         width: 90%;
+     }
+ }
+
+ @media (max-width: 480px) {
+     body {
+         font-size: 14px;
+     }
+
+     .search-form {
+         width: 90%;
+     }
+
+     .search-box {
+         width: 100%;
+     }
+ }

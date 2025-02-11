@@ -1,0 +1,160 @@
+body {
+    background: rgb(253, 237, 240);
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.custom-navbar {
+    background-color: #d9534f !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+.custom-navbar .nav-link {
+    color: white !important;
+}
+
+.logo {
+    height: 50px;
+}
+.img-fluid {
+    max-width: 80%;
+    margin-top: 50px;
+}
+/* Adjust body content to avoid navbar overlap */
+.content-section {
+    padding-top: 90px;
+}
+
+/* Card Section */
+.card {
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: rgb(255, 255, 240);
+    margin-top: 50px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Image Slider */
+.carousel-inner img {
+    max-height: 350px;
+    object-fit: cover;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/* Footer */
+/* Footer Styles */
+.footer {
+    background: #121212;
+    color: #e0e0e0;
+    padding: 40px 0 20px;
+    font-size: 14px;
+}
+
+.footer h6 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #00bcd4;
+}
+
+/* Contact and Quick Links */
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-list i {
+    margin-right: 10px;
+    color: #00bcd4;
+}
+
+/* Quick Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #e0e0e0;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #00bcd4;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #e0e0e0;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00bcd4;
+}
+
+/* Footer Line */
+.footer-line {
+    border-top: 1px solid #333;
+    margin: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .text-md-end {
+        text-align: center !important;
+    }
+}
