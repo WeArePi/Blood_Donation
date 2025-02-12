@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation</title>
+    <link rel="stylesheet" href="css_index/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="custom-navbar">
+    <img src="assets/images/BloodDonation_Logo.png" alt="Logo" class="logo">
+    <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="activity.html">Activity</a>
+        <a href="#services">Service</a>
+    </div>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">☾☼</button>
+</nav>
+
+<!-- Main Container -->
+<div class="container">
+    <form class="search-form">
+        <select id="userType" class="search-box" onchange="redirectUser()">
+            <option value="">Select Option</option>
+            <option value="receiver.html">Receiver</option>
+            <option value="donor.html">Donor</option>
+        </select>
+        <p class="donor-text" onclick="alert('Thank you for your willingness to donate!')">I'm proud to Donate!</p>
+    </form>
+</div>
+
+<script src="js_index/index.js"></script>
+
+</body>
+</html>
